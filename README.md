@@ -40,3 +40,46 @@ This attibute provides better error handling experience in React 16 or later.
 |**file size** is huge - because of comments, code and debugging information to debug and troubleshoot the code |file size is small - because of minification, optimization, removal of unnecessary code.|
 |**performance** - fine in performance|much better in performance as it is optimized|
 |**Errors Message** - have better errors and warnings to debug and diagnose the errors. Additional checks and warnings are there.|Does not have additional checks and warnings.|
+
+# Assignment2
+
+## What is npm?
+npm is package manager.
+It's a place where code or libraries centralized and people can use them.
+
+## What is parcel/webpack? Why do we need it?
+**Webpack:**
+An bundler is bundles many files into a single file.
+Webpack is a static module bundler.
+
+**Parcel:**
+Parcel is bundler that compiles our application.
+Parcel performs several functions such as-
+- Hot Module Replacement
+- Minification
+- Lazy Dev builds
+- Error handling
+- Tree shaking
+- File Tracking Algorithm
+- Optimization
+- Compression
+- Transpilation
+- Differential building(supports old browsers)
+
+## What is .parcel-cache?
+**.parcel-cache** is a folder that stores the information while building our application, so that in re-build, it does not have to re-analyze and re-parse everything from scratch.
+
+## What is npx?
+**npx** is used to execute the Node packages.
+
+## Difference between dependencies and devDependencies.
+
+|dependencies|devDependencies|
+|-------------|--------------|
+|a dependency requires for the project or application.|a dev dependency requires during development to develop the application.|
+
+## Tree Shaking?
+It's a way by which the dead code or unused code gets removed while building so that our application be production ready.
+
+## Hot Module Replacement.
+A method which update the changes in the browser with code changes.
