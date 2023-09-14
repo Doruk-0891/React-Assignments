@@ -83,3 +83,24 @@ It's a way by which the dead code or unused code gets removed while building so 
 
 ## Hot Module Replacement.
 A method which update the changes in the browser with code changes.
+
+
+# Assignment3
+
+## What is JSX?
+**JSX** is Javacript Syntax Extension that used in React to create an application easily.
+
+## Benefits of JSX.
+- Becomes easy to write the code as code becomes readable.
+- The JSX code returns the React element in return.
+
+## type attrubute in script tag.
+**type** attribute in script tag tells the type of script.
+type  has values:
+- **module** - script gets treated as a module.
+- **importmap** - indicates that body of the element contains import map.Import map is  JSON object that developers use to control how the browsers would resolve JS modules.
+
+## {Title()} vs <Title /> vs <Title><Title/>
+{Title()}: this is Javascript code in JSX where Title() functional component gets called to render.
+
+<Title /> or <Title><Title/>: these are an another ways to render the component.
