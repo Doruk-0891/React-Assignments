@@ -100,7 +100,59 @@ type  has values:
 - **module** - script gets treated as a module.
 - **importmap** - indicates that body of the element contains import map.Import map is  JSON object that developers use to control how the browsers would resolve JS modules.
 
-## {Title()} vs <Title /> vs <Title><Title/>
+## {Title()} vs \<Title>\</Title> vs \<Title />
 {Title()}: this is Javascript code in JSX where Title() functional component gets called to render.
 
-<Title /> or <Title><Title/>: these are an another ways to render the component.
+Others are another ways to render the component.
+
+# Assignment4
+
+## Is JSX mandatory for React?
+NO. 
+JSX made it easier to write react application. 
+JSX gives more useful errors and warnings.
+
+## Is ES6 mandatory for React?
+NO.
+We can use some other imports like 'create-react-class' for using the components functionality.
+
+## Comments in JSX.
+JSX is compiled to valid Javascript.
+It has it's own to way to comments.
+{/* */}, this is used to comment, inside this comments can be written down.
+
+## React.fragments vs Empty tags
+Both are used to get rid of extra wrapper container or element while returning or rendering the multiple elements.
+However, there is a difference between the two.
+|React.fragments|Empty tags|
+|--------------|---------------|
+|It's a React feature. |It's JSX syntax.|
+|It can have a key attribute - **Keyed Fragments**|Cannot have a key attribute.|
+
+## Virtual DOM
+Virtual DOM is a lightweight copy of actual DOM.
+
+## Reconciliation
+The process in which updated Virtual DOM is compared with pre-updated virtual DOM is **diffing**.<br>
+React uses batch updates to update the real DOM.<br>
+That means updating the DOM using batches instead of updating the DOM for single change in the state of component.<br>
+The entire process of transforming the changes into the real DOM is **reconciliation**.
+
+## React Fiber
+
+
+## Why we need keys in React? When to use keys?
+Keys gives the identity to the elements.<br>
+Keys are used to identify the changes, updated or deleted elements.<br>
+While listing or riterating over the list, use keys.
+
+## Can we use index as a key in React?
+Yes, we can  but it is highly discouraged to use it.<br>
+Reorder of the array elements can lead to poor performance.<br>
+React gets confused if elements from an array gets removed, added or reordered as which element mapped to which element.
+
+## props in React.
+props are the properties of a component that can be passed from one component to the other component.
+
+## Config Driven UI
+Its a technique to build the UI using Config file in JSON format.
