@@ -156,3 +156,78 @@ props are the properties of a component that can be passed from one component to
 
 ## Config Driven UI
 Its a technique to build the UI using Config file in JSON format.
+
+# Assignment 5
+
+## Named exports , default exports and * .
+**Named exports**
+- can export multiple exports from a same file.
+- Have to use same name to import as exported in export file.
+- Have to use braces to import.
+
+**Default exports**
+- can export only one as default.
+- can use different name while importing.
+- import it without braces.
+
+**'*'**
+- exports all the things.
+- imports every function, variable, object and anything else.
+
+## Config.js file
+**Config.js** is used to have all constants, mock data, url's and so on.
+
+## React hooks
+React hooks are the feature in React16.8
+These are functions that hooks into state and lifecycle features from functional components.
+
+## Need of useState hook
+Using normal Javsacript variable can store the updated value, however it will not be rendered onto the UI.
+If we want to render, then the updated value gets lost.
+To resolve this, we need useState hook which provides a local state variable which stores the updated value and render the screen with updated value.
+And we can bind our UI element with the data using useState variable.
+
+# Assignment 6
+
+## Microservice
+It is a small, loosely coupled distributed system.
+Benefits:
+- Small Modules
+- DURS-Each service independently can be deploy, updated, replaced and scalable.
+- Increased security.
+- Open Standards.
+- Unaffected by failure of single module.
+
+## Monolith
+This is a architecture in which business logic, UI layer and database , all are into one package.##
+
+## Need of useEffect hook.
+Side Effects are all those that are outside of the scope of react.
+Eg: updating a DOM, using a web service, calling an api call and so on.
+To eliminate the side effects and we need something that can keep track of side effects as render is very fast, we use useEffect hook.
+
+## Optional Chaining
+This is an error proof way to access the properties in the nested objects.
+
+## Shimmer UI
+It'a method in which when data is getting fetched, until then shapes, layout of the content mimics the actual content.
+Benfits:
+- Improve user experience.
+- Remove cognitive load.
+
+## Conditional Rendering
+Render the element based on a condition.
+eg:
+{isLogin? <Home /> : <SignUp />}
+
+## CORS:
+Cross Origin Resource Sharing.
+It's a HTTP-header mechanism that allows a server to detect the origin other than its own to check whether is it permissible to load the resources.
+
+## async and await
+async and await, is a way to write an promise based code.
+async functions will always return a promise.
+await pause the execution until promise resolves.
+
+## const json = await data.json();
+converting the fetched data from an api to JSON, while it's promise based data, hence used await.
