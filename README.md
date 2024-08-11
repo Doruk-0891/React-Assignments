@@ -1,4 +1,4 @@
-# Ta'leem e React - Assignment 1
+# React - Assignment 1
 
 ## Emmet:
 An **Emmet** is a built-in feature in VSCode which prevents us to write the full code by giving the suggestions(Emmet abbreviation).
@@ -27,6 +27,7 @@ The library was designed to react to change its data.
 Whenever there is change in data, the depenedent components gets updated (or be reactive) and gets rendered.
 
 ## Why crossorigin attribute used in React CDN links?
+Crossorigin enables Cross Origin Resource Sharing that allows the loading of external Javascript files from different origin  than the hosting web page.
 This attibute provides better error handling experience in React 16 or later.
 
 ## React vs ReactDOM
