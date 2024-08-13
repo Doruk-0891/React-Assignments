@@ -110,7 +110,7 @@ A method which update the changes in the browser with code changes.
 .gitignore must avoid to have files such as package.json, package-lock.json and our application or source code files.
 
 ## package.json vs package-lock.json
-
+|package.json|package-lock.json|
 |--------------------------|---------------------------|
 |package.json file keeps the generic version of all dependencies required in the application. | package-lock.json keeps the specific or exact version of all the dependencies required in our application.|
 
@@ -142,6 +142,7 @@ browserslist is a tool that specifies which browsers are compatible to our front
 ## caret ^ vs tilda ~
 Both are used to handle the range of version for project dependencies.
 
+|caret ^ | tilda ~|
 |-----------------|----------------------|
 |^ indicates the most recent major version, that meansit will update all the version, if we have ^ 1.2.3 the all versions 1.2.3 to <2.0.0| ~ indicates the minor version that is patch releases. Suppose if we have version 1.2.3 then it indicates or match 1.2.x but not 1.3.x versions.|
 
