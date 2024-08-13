@@ -47,6 +47,8 @@ This attibute provides better error handling experience in React 16 or later.
 ## What is npm?
 npm is package manager.
 It's a place where code or libraries centralized and people can use them.
+npm manages the packages.
+If we have to use package in our application, then we have to run **npm install package_name**.
 
 ## What is parcel/webpack? Why do we need it?
 **Webpack:**
@@ -68,6 +70,12 @@ Parcel performs several functions such as-
 - Differential building(supports old browsers)
 
 ## What is .parcel-cache?
+When we run an application, build gets triggered. It will take some time and file gets created '.parcel-cache'
+When we make changes in our application and save it then again builds gets triggered , this time it takes less time.
+This reduction in time is because of parcel-cache.
+
+Parcel caches the code.  
+Parcel uses the cache code on subsequent builds that provides faster developing experience.
 **.parcel-cache** is a folder that stores the information while building our application, so that in re-build, it does not have to re-analyze and re-parse everything from scratch.
 
 ## What is npx?
@@ -83,8 +91,59 @@ Parcel performs several functions such as-
 It's a way by which the dead code or unused code gets removed while building so that our application be production ready.
 
 ## Hot Module Replacement.
+
+There is a file watcher algorithm  that keeps tracks of the changes made in any file and tells the server to reload.
 A method which update the changes in the browser with code changes.
 
+## 5 Parcel fetaures-
+
+- Hot Module Replacement
+-Tree Shaking
+- Differential building
+- Minfication
+- Optimization
+
+## What is .gitignore?
+
+.gitignore is a file in which all files that should not undergo the git stages or commit.
+.gitignore should have node_modules, dist, parcel-cache as they can be regenerate.
+.gitignore must avoid to have files such as package.json, package-lock.json and our application or source code files.
+
+## package.json vs package-lock.json
+
+|--------------------------|---------------------------|
+|package.json file keeps the generic version of all dependencies required in the application. | package-lock.json keeps the specific or exact version of all the dependencies required in our application.|
+
+## Why we should not modify package-lock.json?
+package-lock.json keeps track of the specific version of depeendencies used in the application.
+Upon modification, our app can gets crashed because of some unsupportable features that were not exist in the package-lock.json file used while developing the application.
+
+## What is node_mdoules?
+
+node_modules is a folder that gets installed when we use npm to install a package.
+It's like a databse for npm.
+It have all transitive dependencies and each have their own package.json file.
+One should not push it on git, as it is very heavy and can be regenerate.
+
+## What is /dist folder?
+
+When a bundler, bundles the application, a minified and optimized version of source code gets stored in dist folder.
+
+When we run npx parcel index.html,
+a development build gets triggered and serves onto the server.
+
+When we run npx build parcel index.html,
+a production build gets created which takes care of optmization, minifaction, clean and bundles the application.This is where dist folder gets created.
+
+## What is browserslist?
+
+browserslist is a tool that specifies which browsers are compatible to our frontend app.
+
+## caret ^ vs tilda ~
+Both are used to handle the range of version for project dependencies.
+
+|-----------------|----------------------|
+|^ indicates the most recent major version, that meansit will update all the version, if we have ^ 1.2.3 the all versions 1.2.3 to <2.0.0| ~ indicates the minor version that is patch releases. Suppose if we have version 1.2.3 then it indicates or match 1.2.x but not 1.3.x versions.|
 
 # Assignment3
 
