@@ -206,12 +206,19 @@ However, there is a difference between the two.
 
 ## Virtual DOM
 Virtual DOM is a lightweight copy of actual DOM.
+So, for every object in DOM there is an object in virtual DOM, it just does not have power to update the layout.
+Manipulating real DOM is slow, but manipulating virtual DOM is fast.
+Any update in the state of an application, there is change in virtual DOM and not directly in real DOM.
 
 ## Reconciliation
-The process in which updated Virtual DOM is compared with pre-updated virtual DOM is **diffing**.<br>
-React uses batch updates to update the real DOM.<br>
-That means updating the DOM using batches instead of updating the DOM for single change in the state of component.<br>
-The entire process of transforming the changes into the real DOM is **reconciliation**.
+
+- In react, everything treated as a component.
+- Components have state and whenever there is change in state , virtual DOM tree gets updated.
+- React have two virtual at each time- one is updated Virtual DOM and other is just pre-update version of updated Virtual DOM.
+- Now it compares the two virtual DOM and get to know the exact changes in the component.
+- The process in which updated Virtual DOM is compared with pre-updated virtual DOM is **diffing**.<br>
+- React send the udpates in batches which means changes in real DOM are sent in batches instead of sending single update in the state of component.
+- The entire process of transforming the changes into the real DOM is **reconciliation**.
 
 ## React Fiber
 
