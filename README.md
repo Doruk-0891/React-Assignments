@@ -225,12 +225,14 @@ While listing or riterating over the list, use keys.
 Yes, we can  but it is highly discouraged to use it.<br>
 Reorder of the array elements can lead to poor performance.<br>
 React gets confused if elements from an array gets removed, added or reordered as which element mapped to which element.
+React re-renders the all of the related component instead of just updating the specific one.
 
 ## props in React.
 props are the properties of a component that can be passed from one component to the other component.
 
 ## Config Driven UI
-Its a technique to build the UI using Config file in JSON format.
+Its a user interface that builds on configurable data.
+The data coming from an api and it can change based on certain factors such as user, location and so on.
 
 # Assignment 5
 
