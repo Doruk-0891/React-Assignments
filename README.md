@@ -98,7 +98,7 @@ A method which update the changes in the browser with code changes.
 ## 5 Parcel fetaures-
 
 - Hot Module Replacement
--Tree Shaking
+- Tree Shaking
 - Differential building
 - Minfication
 - Optimization
@@ -144,16 +144,30 @@ Both are used to handle the range of version for project dependencies.
 
 |caret ^ | tilda ~|
 |-----------------|----------------------|
-|^ indicates the most recent major version, that meansit will update all the version, if we have ^ 1.2.3 the all versions 1.2.3 to <2.0.0| ~ indicates the minor version that is patch releases. Suppose if we have version 1.2.3 then it indicates or match 1.2.x but not 1.3.x versions.|
+|^ indicates the most recent major version, that means it will update all the version, if we have ^ 1.2.3 the all versions 1.2.3 to <2.0.0| ~ indicates the minor version that is patch releases. Suppose if we have version 1.2.3 then it indicates or match 1.2.x but not 1.3.x versions.|
 
 # Assignment3
 
 ## What is JSX?
-**JSX** is Javacript Syntax Extension that used in React to create an application easily.
+**JSX** is Javascript Syntax Extension that used in React to create an application easily.
+It's HTML-like syntax.
+JSX is not part of React.
+JS Engine understands ecmascript.
+So JSX code gets transpiled before rendering to browser.
+
+Parcel takes a code and acts as a manager pass this task to a module - Babel.
+Babel takes JSX code and transpiled it into format that browser can understand.
+
 
 ## Benefits of JSX.
-- Becomes easy to write the code as code becomes readable.
+- Becomes easy to write the code as code becomes readable, as we don't have to use React.createElement.
 - The JSX code returns the React element in return.
+- JSX santize the code
+    - If someone gets access to our JS code, then malicious data can be send which gets displayed onto the browser. This is cross site scripting.
+    - Then local storage, session storage, cookies, get cookies , gets access to device, all such access would be available.
+    - JSX prevenst the attack.
+    - JSX sanitize the code before rendering.
+    
 
 ## type attrubute in script tag.
 **type** attribute in script tag tells the type of script.
