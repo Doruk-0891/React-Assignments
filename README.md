@@ -327,3 +327,39 @@ await pause the execution until promise resolves.
 
 ## const json = await data.json();
 converting the fetched data from an api to JSON, while it's promise based data, hence used await.
+
+# Assignment 7
+
+## different ways to add images
+
+- use ES6 module to import images.
+- keep image in public folder
+- get images from external API or backend.
+- use CSS styles.
+
+## What would happen if we do console.log(useState())?
+
+It will print two values as an array, one is the value assigned and other is function to set the value.
+ex: [0, Function]
+
+## How will useEffect behave if we don't add a dependency array ?
+
+If we don't add a dependency array, then useEffect will execute on every render.
+
+## What is SPA?
+
+SPA is an application in which content update dynamically using Javascript instead of calling or fetching the pages from server.
+
+- Dynamic updates
+- Smooth user experience.
+- Client Side routing
+- API centric
+- State management.
+
+## Client side routing vs Server side routing
+|Client side routing| Server side routing|
+|---------------|----------------|
+|handle on client side| handle on server side|
+|faster page transition| slower transition|
+|Not SEO friendly| SEO friendly|
+|Single Page Application| Traditional websites|
