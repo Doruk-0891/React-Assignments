@@ -274,16 +274,28 @@ And we can bind our UI element with the data using useState variable.
 # Assignment 6
 
 ## Microservice
-It is a small, loosely coupled distributed system.
+Instead of bundling every service of an application together, the idea is to split it up into smaller set of interconnected services, each perform its own specific task.This is microservice.
+Each service has it own set of rules and tools.
+Each service can use REST or messaging or any other means to communicate.
+
 Benefits:
-- Small Modules
-- DURS-Each service independently can be deploy, updated, replaced and scalable.
-- Increased security.
-- Open Standards.
-- Unaffected by failure of single module.
+- Simpler Development.
+- Scalable
+- Flexible
+- Continuous Deployment.
+- Separation of concerns.
+- Single responsiblity.
 
 ## Monolith
-This is a architecture in which business logic, UI layer and database , all are into one package.##
+This is a architecture in which business logic, UI layer and database , all are into one package.
+Cons:
+- Slow startup.
+- Size and complexity limitation.
+- Difficult for continuous deployment.
+- Any change requires the entire application to gets deployed.
+- Requires manual testing on any change.
+- Scalable challenges.
+- Adoption of new technologies is difficult.
 
 ## Need of useEffect hook.
 Side Effects are all those that are outside of the scope of react.
