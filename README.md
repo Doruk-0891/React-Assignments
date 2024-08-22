@@ -374,3 +374,58 @@ SPA is an application in which content update dynamically using Javascript inste
 - componentDidUpdate: This lifecycle triggers on every update or changes in states or props. It's often used to perform side effects like updating DOM.
 - componentWillUnmount: This triggers just before the component is about to unmounting from DOM. In this we perofrm cleanup task to release the reosurces to prevent memory leak or unexpeccted behaviour.
 
+# Assignment 9
+
+## When and why do we need lazy?
+
+Lazy function in React allows us to load the components dynamically or lazily.
+That means on requirement only, components gets loaded.
+
+- Code splitting and reduce bundler size.
+- Improve performance.
+- Faster initial load.
+- Better user experience.
+- Reducing browser cache overhead.
+- Optimizing mobile performance.
+
+## What is Suspense?
+
+Suspense is a React feature that allows us to declaratively manage asynchronous data fetching and code splitting in our application. Suspense with lazy used to perform dynamic imports.
+Use case:
+- Code splitting
+- Data fetching
+- Error handling
+- Avoid callback hell.
+- Simplify code.
+
+## Why do we get this error: A component was suspended while responding to synchronous input. This will cause the UI to be replaced with a loading indicator. To fix this, updates that suspend should be wrapped with start transition ? How does suspense fix this error?
+
+Suspense is used to manage the code splitting and asynchronous data fetching , allowing to display a loading indicator while data or code is being fetched.
+When React encounters Suspense boiundary, React knows it might be delay in rendering.So it handle by suspense gracefully.
+
+This error tells that a component was responding to synchronous input, encopunters a suspension.
+
+To fix this error,
+- Identify the issue- may be bacause of network request or asynchronous data fetchig or in dynamic import of a component.
+- Wrap that part with suspense and provide fallback.
+
+## Advantages and disadvantages of Code splitting.
+
+Code splitting is a technique to split the code into small chunks which makes our application manageable, and can be loaded on time.
+
+Advantages:
+- Faster intial load time.
+- Better user experience.
+- Improve performance.
+- Optimize resource usage.
+- Optimize mobile performance.
+- Enhance caching
+-  Simpler maintenance.
+
+  Disadvantages:
+- Complex configuration.
+- Initial loading delay.
+- Asynchronous loading.
+- Route based splitting.
+- Test and Framework support
+- Testing complexity.
