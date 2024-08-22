@@ -363,3 +363,14 @@ SPA is an application in which content update dynamically using Javascript inste
 |faster page transition| slower transition|
 |Not SEO friendly| SEO friendly|
 |Single Page Application| Traditional websites|
+
+# Assignment 8
+
+## What is the order of life cycle method calls in Class Based Components.
+
+- constructor: This is the first when component is created.It's the place where we perform state intialization or bind the event handlers .
+- render: This returns the UI part as JSX.
+- componentDidMount: This is the phase after DOM is rendered.So it's the best place to make an api call or manipulate the DOM.
+- componentDidUpdate: This lifecycle triggers on every update or changes in states or props. It's often used to perform side effects like updating DOM.
+- componentWillUnmount: This triggers just before the component is about to unmounting from DOM. In this we perofrm cleanup task to release the reosurces to prevent memory leak or unexpeccted behaviour.
+
